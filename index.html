@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebApp de Reproductores de Audio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <h1>WebApp de Reproductores de Audio</h1>
+    <div id="players">
+        <div class="player-container">
+            <h2>Reproductor de Anuncios</h2>
+            <div class="audio-wrapper">
+                <audio id="announcementPlayer" controls></audio>
+                <i id="announcementIcon" class="fas fa-volume-up audio-icon"></i>
+            </div>
+            <ul id="announcementPlaylist" class="playlist"></ul>
+            <div id="announcementStatus" class="status">Próximo anuncio en: --:--</div>
+        </div>
+        <div class="player-container">
+            <h2>Reproductor de Música</h2>
+            <div class="audio-wrapper">
+                <audio id="musicPlayer" controls></audio>
+                <i id="musicIcon" class="fas fa-volume-up audio-icon"></i>
+            </div>
+            <ul id="musicPlaylist" class="playlist"></ul>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
