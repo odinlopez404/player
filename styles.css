@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:dark;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #1db954;
+}
+
+#players {
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+}
+
+.player-container {
+    background: #1e1e1e;
+    border-radius: 8px;
+    padding: 20px;
+    width: 500px;
+    height: 400px; /* Establece una altura fija para el contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.audio-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+audio {
+    width: 100%;
+}
+
+.audio-icon {
+    font-size: 24px;
+    color: #1db954;
+    display: none; /* Ocultar por defecto */
+}
+
+.playlist {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex: 1; /* Permite que la lista de reproducción ocupe el espacio restante */
+    overflow-y: auto; /* Añade barra de desplazamiento vertical */
+}
+
+    .playlist li {
+        padding: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border-radius: 5px;
+    }
+
+        .playlist li:hover {
+            background-color: #282828;
+        }
+
+.status {
+    margin-top: 10px;
+    font-size: 14px;
+}
